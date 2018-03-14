@@ -267,6 +267,32 @@ function moveToFunds(alpha) {
 		d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
 	};
 }
+function moveToAmounts(alpha){
+	return function(d){
+		     var centreY; 
+		     var centreX; 
+                 if (d.value <= 100000){	
+			centreX = 250;
+			centreY = 350;
+
+		} else if (d.value > 100000 && d.value <=500000){
+                        centreX = 450;
+			centreY = 300;
+
+		}  else if(d.value>500000 && d.value<=1000000){
+			centreX = 200;
+			centreY = 600;
+		}  else if(d.value>1000000){
+			centreX = 400;
+		        centreY = 600;
+		}
+
+
+		d.x += (centreX - d.x) * (brake + 0.02) * alpha * 1.1;
+		d.y += (centreY - d.y) * (brake + 0.02) * alpha * 1.1;
+
+	};
+}
 
 // Collision detection function by m bostock
 function collide(alpha) {
