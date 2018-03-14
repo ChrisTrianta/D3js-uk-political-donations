@@ -150,7 +150,13 @@ circle.active {
     stroke: rgba(17, 17, 17, 0.8);
     stroke-width: 5;
 }
+.zoom{
+    transition: transform .2s;
+}
 
+.zoom:hover {
+    transform: scale(1.5);
+}
 .legend circle {
     stroke: #aabbcc;
     stroke-width: 1;
