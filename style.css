@@ -106,22 +106,22 @@ li {
     height: 100%;
     width: 500px;
 }
-#donation-amount-1{
+#donation-amount-donation1{
    top:110px;
    left:20px;
 }
-#donation-amount-2{
+#donation-amount-donation2{
     top: 60px;
     text-align: right;
     right: -130px;
     
 }
-#donation-amount-3{
+#donation-amount-donetion3{
     top: 530px;
     text-align: right;
     right:230px;
 }
-#donation-amount-4{
+#donation-amount-donation4{
     top: 450px;
     text-align: right;
     right: -130px;
